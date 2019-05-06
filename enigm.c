@@ -49,9 +49,9 @@ message = TTF_RenderText_Solid( font, question, textColor );
 
 
 
-SDL_Rect *p; p->x=260;p->y=150;			
+SDL_Rect *p; p->x=300;p->y=220;			
  SDL_BlitSurface( background, NULL,  screen,NULL );
- SDL_BlitSurface( message, NULL,  screen,p ); 
+ SDL_BlitSurface( message, NULL,  screen,p ); //bch naffichi l question 
  SDL_Flip(screen) ;
 
 
@@ -71,11 +71,11 @@ SDL_Rect *p; p->x=260;p->y=150;
 
 int resolution(int n)
 { int i,fact;
-  fact = 1;
+  fact = 1;//min 1
  for(i=1;i<=n;i++) fact = fact*i;
  return fact;
 
-}
+}// fonction mtaa3 factoriel 
 
 
 int reponse(int *rep )
